@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 
 def index(request):
-    return HttpResponse("hello")
+    return render(request, 'app1/index.html')
