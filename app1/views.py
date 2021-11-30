@@ -70,7 +70,7 @@ def get_name(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponse(str(form.cleaned_data['your_name'])+' form filled')
 
     # if a GET (or any other method) we'll create a blank form
     else:
